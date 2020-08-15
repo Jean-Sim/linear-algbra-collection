@@ -198,6 +198,7 @@ def finde_position_vector(point_1, point_2):
 def eigen_vectore_2x2(matrix):
     matrix[0,0] -= eigenvalue_2x2(matrix)
     matrix[1,1] -= eigenvalue_2x2(matrix)
+    # first uses the the eigenvalue module to mod the matrix 
 
     return solve_eq(matrix, [0,0])[1]
 
