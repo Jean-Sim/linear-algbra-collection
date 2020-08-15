@@ -201,6 +201,7 @@ def eigen_vectore_2x2(matrix):
     # first uses the the eigenvalue module to mod the matrix 
 
     return solve_eq(matrix, [0,0])[1]
+    # then uses the solve_eq module to solve for the eigen vector 
 
 def translation(vectore, matrix):
    new_result = VM_multiplication(vectore, matrix)
