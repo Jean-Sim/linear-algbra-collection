@@ -14,7 +14,7 @@ def string_vector(lis):
     # split in to individual numbers
     for element in range(len(lis)):
         lis[element] = float(lis[element])
-        # turns string in to numbers
+        # turns each string out of the list 
     return lis
 
 def string_matrix(mis):
