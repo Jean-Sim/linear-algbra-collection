@@ -83,6 +83,7 @@ def rowEchelon(M):
 
     def rowMod(M, i, j, x):
         M[i] = [a + x * b for a, b in zip(M[i], M[j])]
+    # define row mod function
 
     M = normalise(M)
     row, col = 0, 0
