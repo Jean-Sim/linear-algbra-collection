@@ -94,6 +94,7 @@ def rowEchelon(M):
                 if M[r][col] != 0:
                     rowMod(M, row, r, 1)
                     break
+    # uses while loop to go through matrix 
 
         if M[row][col] == 0:
             col += 1
