@@ -1,5 +1,5 @@
 def dot_product(vec):
-    from web_app_tool import final_step
+    from content.modules_for_Web_app.web_app_tool import final_step
     vector_1, vector_2 = final_step(vec)
     dot_product = 0
     for index in range(len(vector_1)):
@@ -8,7 +8,7 @@ def dot_product(vec):
         except IndexError:
             ""
 
-    return dot_product
+    return round(dot_product, 5)
 
 
 

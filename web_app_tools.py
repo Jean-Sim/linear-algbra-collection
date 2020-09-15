@@ -1,3 +1,11 @@
+#input rules 
+"""
+1 to declare a matrix use those () ... a element inside the matrix must be separated by ; ... please input each matrix column as a vector as shown in rule 2
+2 to declare vector use those [] ... numbers inside must be separated by ,
+3 if the module you are using take multiple inputs use | to separate them
+"""
+# Note the order of output is as follows: Skalar<-Vector<-Matrix   
+
 def string_vector(lis):
     lis = lis.strip("[")
     lis = lis.strip("]")
@@ -6,7 +14,7 @@ def string_vector(lis):
     # split in to individual numbers
     for element in range(len(lis)):
         lis[element] = float(lis[element])
-        # turns string in to numbers
+        # turns each string out of the list 
     return lis
 
 def string_matrix(mis):
@@ -41,7 +49,7 @@ def final_step(st):
             new_st.insert(0, string_vector(st[1]))
     else:
         new_st.insert(0, float(st[0]))
-    # checks whether it is matrix, vector or num
-    # and inserts them in the correct position so that num , vector , matrix
+    # checks whether it is a matrix, vector or num
+    # and then inserts them in the correct position so that num , vector , matrix
 
     return new_st[0], new_st[1]

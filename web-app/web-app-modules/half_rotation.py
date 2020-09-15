@@ -1,5 +1,5 @@
 def half_rotation(matrix):
-    from web_app_tool import  string_matrix
+    from content.modules_for_Web_app.web_app_tool import string_matrix
     matrix = string_matrix(matrix)
 
     def MM_multiplication(matrix_1, matrix_2):
@@ -25,8 +25,6 @@ def half_rotation(matrix):
     for col in range(len(new_)):
         count += 1
         new_[col][count*-1] = 1
-    #print(new_)
 
     return MM_multiplication(matrix, new_)
-half_rotation([[1,1],[1,1]])
 

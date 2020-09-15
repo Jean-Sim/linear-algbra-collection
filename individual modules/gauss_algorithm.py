@@ -10,6 +10,7 @@ def rowEchelon(M):
 
     def rowMod(M, i, j, x):
         M[i] = [a + x * b for a, b in zip(M[i], M[j])]
+    # define row mod function
 
     M = normalise(M)
     row, col = 0, 0
@@ -20,7 +21,7 @@ def rowEchelon(M):
                 if M[r][col] != 0:
                     rowMod(M, row, r, 1)
                     break
-
+    # uses while loop to go through matrix 
         if M[row][col] == 0:
             col += 1
             continue

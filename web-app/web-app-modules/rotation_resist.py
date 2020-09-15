@@ -1,5 +1,5 @@
 def rotation_resist(M):
-    from web_app_tool import string_matrix
+    from content.modules_for_Web_app.web_app_tool import string_matrix
     M = string_matrix(M)
     def MM_multiplication(matrix_1, matrix_2):
         end_matrix = []

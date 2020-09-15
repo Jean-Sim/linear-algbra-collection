@@ -20,6 +20,7 @@ def dot_product(vector_1, vector_2):
             # multiplies and adds to var
             dot_product += vector_1[index] * vector_2[index]
         except IndexError:
+            print("incorrect dimensions please check your input")
             # catches Index error if one vector is longer then the other 
     return dot_product
 
@@ -30,7 +31,7 @@ def VM_multiplication(vector, matrix):
             for column in range(len(matrix[element])):
                 matrix[element][column] = matrix[element][column]*vector[element]
         except IndexError:
-            "incorrect dimensions please check input"
+           print("incorrect dimensions please check your input")
     for new in range(len(vector)):
         # empties vector
         vector[new] = 0
@@ -39,7 +40,7 @@ def VM_multiplication(vector, matrix):
             for col in range(len(matrix)):
                 vector[new] += matrix[col][new]
         except IndexError:
-            "incorrect dimensions please check input"
+            print("incorrect dimensions please check your input")
             #checks for index error and excepts it 
     
     return vector
@@ -59,11 +60,13 @@ def MM_multiplication(matrix_1, matrix_2):
         end_matrix.append([])
         for none in matrix_1:
             end_matrix[element].append(0)
+    # creates return matrix 
 
     for i in range(len(matrix_1)):
         for j in range(len(matrix_1)):
             for k in range(len(matrix_1)):
                 end_matrix[i][j] += matrix_1[i][k] * matrix_2[k][j]
+    # then useses matrix multiplication when treating one if the matrixis as a vector before adding them to return matrix  
     
     return end_matrix
 
@@ -104,6 +107,7 @@ def rowEchelon(M):
     return normalise(M)
 
 def determinant(M):
+    # normalise means taht it changes the matrix from row in to column form 
     def normalise(M):
         new_M = []
         for element in range(len(M)):
@@ -177,6 +181,7 @@ def cross_product(vector_1, vector_2):
 
 def absolute_value(vector):
     val = 0
+    # defines zero value 
 
     for element in vector:
         val += element**2
@@ -209,9 +214,11 @@ def mid_vector(lis_vec):
     add = 0
 
     for vec_row in range(len(lis_vec[0])):
+        #adds all vector elements together
         for element in lis_vec:
             add += element[vec_row]
         new_vec.append(add / len(vec_row))
+        # divides by amount of vector
         add = 0
 
     return new_vec

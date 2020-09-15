@@ -1,5 +1,5 @@
 def determinant(M):
-    from web_app_tool import string_matrix
+    from content.modules_for_Web_app.web_app_tool import string_matrix
     M = string_matrix(M)
     def normalise(M):
         new_M = []
@@ -41,5 +41,5 @@ def determinant(M):
     new_M = rowEchelon(M)
     for element in range(len(M)):
         num = num*new_M[element][element]
-    return num
+    return round(num,5)
 

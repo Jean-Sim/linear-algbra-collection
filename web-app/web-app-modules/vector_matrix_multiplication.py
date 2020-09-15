@@ -1,5 +1,5 @@
 def VM_multiplication(inp):
-    from web_app_tool import final_step
+    from content.modules_for_Web_app.web_app_tool import final_step
     vector, matrix = final_step(inp)
     for element in range(len(vector)):
         try:

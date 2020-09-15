@@ -1,3 +1,4 @@
+# note we have decided that this module will not be included in the web app
 def mid(lis_vec):
     # input must be list of vectors
     new_vec = []

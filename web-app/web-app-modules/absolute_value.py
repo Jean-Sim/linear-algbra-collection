@@ -1,14 +1,12 @@
 def absolute_value(vector):
-    from web_app_tool import string_vector
+    from content.modules_for_Web_app.web_app_tool import string_vector
     vector = string_vector(vector)
     import math
-    from web_app_tool import string_vector
-    vector = string_vector(vector)
 
     val = 0
 
     for element in vector:
         val += element**2
 
-    return math.sqrt(val)
+    return round(math.sqrt(val), 5)
 

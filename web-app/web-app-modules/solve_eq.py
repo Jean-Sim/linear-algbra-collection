@@ -1,5 +1,5 @@
 def solve_eq(inp):
-    from web_app_tool import final_step
+    from content.modules_for_Web_app.web_app_tool import final_step
     result, matrix = final_step(inp)
     def abs(lis):
         if lis < 0:
