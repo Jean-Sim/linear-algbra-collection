@@ -1,7 +1,7 @@
 def string_matrix(mis):
     mis = mis.strip("(")
     mis = mis.strip(")")
-    # removes unnecessary elements from string
+    # removes the unnecessary elements from the string
     mis = mis.split(";")
     # splits it into individual vector parts
     for element in range(len(mis)):
