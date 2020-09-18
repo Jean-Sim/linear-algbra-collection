@@ -72,6 +72,7 @@ def MM_multiplication(matrix_1, matrix_2):
 
 def rowEchelon(M):
     def normalise(M):
+        # normalise is used to translate between deifrent way of inputing a matrix
         new_M = []
         for element in range(len(M)):
             new_M.append([])
@@ -82,6 +83,7 @@ def rowEchelon(M):
 
     def rowMod(M, i, j, x):
         M[i] = [a + x * b for a, b in zip(M[i], M[j])]
+    # define row mod function
 
     M = normalise(M)
     row, col = 0, 0
@@ -92,6 +94,7 @@ def rowEchelon(M):
                 if M[r][col] != 0:
                     rowMod(M, row, r, 1)
                     break
+    # uses while loop to go through matrix 
 
         if M[row][col] == 0:
             col += 1
