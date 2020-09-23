@@ -5,6 +5,7 @@ def dot_product(vector_1, vector_2):
         # goes through each element in the two vectors 
         try:
             dot_product += vector_1[index] * vector_2[index]
+            #multiplies them then adds them to dot_product
             
         except IndexError:
             "incorrect dimensions please check input"
