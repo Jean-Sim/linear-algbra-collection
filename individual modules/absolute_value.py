@@ -6,7 +6,7 @@ def absolute_value(vector):
 
     for element in vector:
         val += element**2
-        # adds the squares of all vectore elements to variable
+        # adds the squares of all vectore elements to the variable
 
     return math.sqrt(val)
 
