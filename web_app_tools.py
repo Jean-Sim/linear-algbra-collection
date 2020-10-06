@@ -1,5 +1,5 @@
-#input rules 
 """
+input rules
 1 to declare a matrix use those () ... a element inside the matrix must be separated by ; ... please input each matrix column as a vector as shown in rule 2
 2 to declare vector use those [] ... numbers inside must be separated by ,
 3 if the module you are using take multiple inputs use | to separate them
