@@ -31,7 +31,7 @@ def string_matrix(mis):
 def final_step(st):
     st = st.split("|")
     new_st = []
-    # defines new_st and splits st in to two inputs
+    # defines new_st and splits st in to two elements
     if "([" in st[0]:
         new_st.append(string_matrix(st[0]))
     elif "[" in st[0]:
