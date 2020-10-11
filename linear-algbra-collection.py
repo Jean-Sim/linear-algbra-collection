@@ -60,7 +60,7 @@ def MM_multiplication(matrix_1, matrix_2):
         end_matrix.append([])
         for none in matrix_1:
             end_matrix[element].append(0)
-    # creates return matrix 
+    # creates the  return matrix 
 
     for i in range(len(matrix_1)):
         for j in range(len(matrix_1)):
