@@ -110,7 +110,7 @@ def rowEchelon(M):
     return normalise(M)
 
 def determinant(M):
-    # normalise means taht it changes the matrix from row in to column form 
+    # normalise means changing the matrix from row in to column form 
     def normalise(M):
         new_M = []
         for element in range(len(M)):
