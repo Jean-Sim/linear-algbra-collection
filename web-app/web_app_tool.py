@@ -1,7 +1,7 @@
 """
 to declear a matrix use those () element inside saparated by ;
 to declear a vector use those [] saparated by ,
-to declear element in vector use those , zo seperate numbers
+to declear a element in a vector use those , to seperate the numbers
 to separate diffrint inputs use |
 """
 
