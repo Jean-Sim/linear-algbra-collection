@@ -9,7 +9,7 @@ def angle(vector_1, vector_2):
                 dot_product += vector_1[index] * vector_2[index]
                 # multiplies both vectore elements and adds them to dot_product
             except IndexError:
-                ""
+                "ERROR"
 
         return dot_product
 
