@@ -1,5 +1,5 @@
 """
-to declear matrix use those () element inside saparated by ;
+to declear a matrix use those () element inside saparated by ;
 to declear vector use those [] saparated by ,
 to declear element in vector use those , zo seperate numbers
 to separate diffrint inputs use |
