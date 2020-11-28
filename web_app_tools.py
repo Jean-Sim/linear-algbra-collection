@@ -18,8 +18,8 @@ def string_vector(lis):
     return lis
 
 def string_matrix(mis):
-    mis = mis.strip("(")
-    mis = mis.strip(")")
+    mis = str(mis).strip("(")
+    mis = str(mis).strip(")")
     # removes unnecessary elements from string
     mis = mis.split(";")
     # splits it into individual vector parts
@@ -29,7 +29,7 @@ def string_matrix(mis):
     return mis
 
 def final_step(st):
-    st = st.split("|")
+    st = str(st).split("|")
     new_st = []
     # defines new_st and splits st in to two elements
     if "([" in st[0]:
