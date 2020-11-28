@@ -4,7 +4,7 @@ input rules
 2 to declare vector use those [] ... numbers inside must be separated by ,
 3 if the module you are using take multiple inputs use | to separate them
 """
-# Note the order of output is as follows: Skalar<-Vector<-Matrix   
+# Note the outputorder is as follows: Skalar<-Vector<-Matrix   
 
 def string_vector(lis):
     lis = lis.strip("[")
