@@ -1,7 +1,7 @@
 def final_step(st):
     st = st.split("|")
     new_st = []
-    # defines new_list and splits the input into two 
+    # defines new_st and splits the original input into two 
 
     if "([" in st[0]:
         new_st.append(string_matrix(st[0]))
