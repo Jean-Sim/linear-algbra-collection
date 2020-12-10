@@ -9,7 +9,7 @@ def final_step(st):
         new_st.append(string_vector(st[0]))
     else:
         new_st.append(float(st[0]))
-    # checks whether it is matrix, vector or num
+    # checks whether the input is a matrix, vector or num
 
     if "([" in st[1]:
         new_st.append(string_matrix(st[1]))
