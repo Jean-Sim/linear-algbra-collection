@@ -18,7 +18,7 @@ def final_step(st):
              new_st.append(string_vector(st[1]))
         else:
             new_st.insert(0, string_vector(st[1]))
-    # checks weather it is scalar, matrix, or vector then inserts it into the correct position  
+    # checks whether it is scalar, matrix, or vector then inserts it into the correct position  
     else:
         new_st.insert(0, float(st[0]))
     # checks whether it is matrix, vector or num
