@@ -2,7 +2,7 @@ import math
 
 def eigenvalue_2x2(matrix):
     # solves a quadratic equation
-    # uses PQ formula
+    # uses the PQ formula
     result1 = (matrix[0][0] + matrix[1][1]) / 2 + math.sqrt(
         ((matrix[0][0] + matrix[1][1]) / 2) ** 2 - matrix[0][0] * matrix[1][1])
 
