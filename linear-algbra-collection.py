@@ -54,7 +54,7 @@ def vector_addition(vector_1, vector_2):
     return vector_1
 
 def MM_multiplication(matrix_1, matrix_2):
-    #needs square matrix
+    # requires square matrix
     end_matrix = []
     for element in range(len(matrix_1)):
         end_matrix.append([])
