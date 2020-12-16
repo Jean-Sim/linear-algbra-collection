@@ -7,7 +7,7 @@ def determinant(M):
             new_M.append([])
             # appand new sub vectore 
             for element2 in range(len(M)):
-                # insert element in correct position 
+                # inserts the element in correct position 
                 new_M[element].append(M[element2][element])
         return new_M
     # changes Matrix shape 
