@@ -10,7 +10,7 @@ def determinant(M):
                 # inserts the element in correct position 
                 new_M[element].append(M[element2][element])
         return new_M
-    # changes Matrix shape 
+    # changes Matrix to the right shape 
 
     def rowMod(M, i, j, x):
         M[i] = [a + x * b for a, b in zip(M[i], M[j])]
