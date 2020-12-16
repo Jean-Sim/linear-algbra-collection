@@ -2,7 +2,7 @@
 def determinant(M):
     def normalise(M):
         new_M = []
-        # create new Matrix
+        # creats a new Matrix
         for element in range(len(M)):
             new_M.append([])
             # appand new sub vectore 
