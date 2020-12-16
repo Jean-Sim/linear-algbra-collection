@@ -21,7 +21,7 @@ def determinant(M):
         # uses noramlise to make matrix fit the algorithem 
         row, col = 0, 0
         rows, cols = len(M), len(M[0])
-        # define size of matrix 
+        # defines size of matrix 
         while row < rows and col < cols:
             # starts while loop witch continues until matrix in echelon form 
             if M[row][col] == 0:
