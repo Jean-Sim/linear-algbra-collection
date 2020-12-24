@@ -6,5 +6,5 @@ def string_vector(lis):
     # splits the string into an array 
     for element in range(len(lis)):
         lis[element] = float(lis[element])
-        # turns string in to numbers
+        # turns the number string in to numbers
     return lis
