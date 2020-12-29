@@ -111,21 +111,23 @@ def rowEchelon(M):
     return normalise(M)
 
 def determinant(M):
-    # normalise means changing the matrix from row in to column form 
     def normalise(M):
         new_M = []
+        # creats a new Matrix
         for element in range(len(M)):
             new_M.append([])
+            # appand new sub vectore 
             for element2 in range(len(M)):
+                # inserts the element in correct position 
                 new_M[element].append(M[element2][element])
-        
         return new_M
+    # changes Matrix in to the right shape 
 
     num = 1
     new_M = rowEchelon(M)
     for element in range(len(M)):
         num = num*new_M[element][element]
-    
+    # multiplies elements diagonally
     return num
 
 def half_rotation(matrix):
