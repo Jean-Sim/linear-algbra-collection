@@ -11,17 +11,18 @@ def eigenvalue_2x2(matrix):
     # result is returned as two possible solutions
     return result1, result2
 
+
 def dot_product(vector_1, vector_2):
-    # defines variable
     dot_product = 0
+    # defines end variable  
     for index in range(len(vector_1)):
-        # goes throug each element in vector length 
+        # goes through each element in the two vectors 
         try:
-            # multiplies and adds to var
             dot_product += vector_1[index] * vector_2[index]
+            # multiplies them then adds them to dot_product
         except IndexError:
-            print("incorrect dimensions please check your input")
-            # catches Index error if one vector is longer then the other 
+            "incorrect dimensions please check input"
+            # returns an ERROR massage when it recives incorrect input 
     return dot_product
 
 def VM_multiplication(vector, matrix):
