@@ -19,15 +19,13 @@ def string_vector(lis):
 def string_matrix(mis):
     mis = mis.strip("(")
     mis = mis.strip(")")
-    # removes unnecessary elements from string
+    # removes the unnecessary elements from the string
     mis = mis.split(";")
     # splits it into individual vector parts
-
     for element in range(len(mis)):
         mis[element] = string_vector(mis[element])
-        # turns string in to list
+        # turns the string matrix in to a list matrix
     return mis
-
 
 def final_step(st):
     st = st.split("|")
