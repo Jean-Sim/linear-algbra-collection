@@ -8,12 +8,12 @@ to separate diffrint inputs use |
 def string_vector(lis):
     lis = lis.strip("[")
     lis = lis.strip("]")
-    # removes unnecessary elements from string
+    # removes all unnecessary brackets from string vector
     lis = lis.split(",")
-    # split in to individual numbers
+    # splits the vector in string form into an array 
     for element in range(len(lis)):
         lis[element] = float(lis[element])
-        # turns string in to numbers
+        # turns the number string in to numbers
     return lis
 
 def string_matrix(mis):
