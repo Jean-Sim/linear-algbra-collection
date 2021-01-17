@@ -1,7 +1,7 @@
 def string_vector(lis):
     lis = lis.strip("[")
     lis = lis.strip("]")
-    # removes all unnecessary brackets from string 
+    # removes all unnecessary brackets from string vector
     lis = lis.split(",")
     # splits the vector in string form into an array 
     for element in range(len(lis)):
