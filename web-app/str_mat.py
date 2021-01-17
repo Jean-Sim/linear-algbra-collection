@@ -6,5 +6,5 @@ def string_matrix(mis):
     # splits it into individual vector parts
     for element in range(len(mis)):
         mis[element] = string_vector(mis[element])
-        # turns the string in to a list
+        # turns the string matrix in to a list matrix
     return mis
